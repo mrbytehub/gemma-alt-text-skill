@@ -1,6 +1,6 @@
 # Gemma 4 - Alt Text Agent Skill (Social Ready) 🇮🇹
 
-Un'estensione per gli agenti basati su **Gemma 4** tramite l'ecosistema **Google AI Edge Gallery**. Questa Skill trasforma il modello in un esperto di accessibilità digitale, ottimizzato per generare testi alternativi (Alt Text) in italiano, pronti per il copia-incolla immediato sui social media (LinkedIn, X, Instagram, ecc.).
+Un'estensione per gli agenti basati su **Gemma 4** tramite l'ecosistema **Google AI Edge Gallery**. Questa Skill trasforma il modello in un esperto di accessibilità digitale, ottimizzato per generare testi alternativi (Alt Text) in italiano, pronti per il copia-incolla immediato sui social media (LinkedIn, Bsky, Instagram, ecc.).
 
 ---
 
