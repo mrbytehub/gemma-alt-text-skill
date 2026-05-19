@@ -1,5 +1,5 @@
 ---
-name: "Alt-Text-Generator"
+name: alt-text-generator
 description: "Genera descrizioni e testi alternativi pronti da copiare per i social media, esclusivamente in lingua italiana."
 category: "Accessibility"
 version: "1.3.0"
