@@ -1,54 +1,29 @@
-# Gemma 4 - Alt Text Agent Skill (Social Ready) 🇮🇹
+# My Gemma Edge Skills 📱🤖
 
-Un'estensione per gli agenti basati su **Gemma 4** tramite l'ecosistema **Google AI Edge Gallery**. Questa Skill trasforma il modello in un esperto di accessibilità digitale, ottimizzato per generare testi alternativi (Alt Text) in italiano, pronti per il copia-incolla immediato sui social media (LinkedIn, Bsky, Instagram, ecc.).
+Una raccolta di agent skill personalizzati e ottimizzati per l'ecosistema **Google AI Edge** (tramite modelli Gemma 4), progettati per essere eseguiti al 100% in locale sul dispositivo, garantendo zero latenza e massima privacy.
 
----
+## 🚀 Skill Disponibili
 
-## 🚀 Caratteristiche principali
+Le skill sono organizzate all'interno della cartella `skills/`:
 
-* **Output in Testo Puro**: Nessun formato JSON o parentesi graffe, il testo è pronto per il copia-incolla.
-* **100% in Italiano**: Traduce e descrive automaticamente in italiano anche se l'immagine contiene testi o grafici in inglese.
-* **Conformità WCAG**: Genera descrizioni concise (max 150 caratteri), oggettive e prive di ridondanze (evita "immagine di...").
-* **Gestione Immagini Complesse**: Riconosce grafici e infografiche fornendo sia l'Alt Text breve sia una descrizione estesa dei dati.
+| Nome Skill | Categoria | Descrizione | Stato |
+| :--- | :--- | :--- | :--- |
+| [**Alt-Text Generator**](./skills/alt-text-generator/SKILL.md) | Accessibility | Genera descrizioni accurate e accessibili (Alt-Text) per le immagini in italiano. | ✅ Pronto |
+| [**Privacy Advisor**](./skills/privacy-advisor/SKILL.md) | Security & Privacy | Analizza on-demand le foto alla ricerca di rischi per la privacy (password, PII, volti, targhe). | ✅ Pronto |
 
----
+## 🛠️ Architettura e Filosofia
 
-## 🛠️ Come installarlo in Google AI Edge
+Tutte le skill contenute in questo repository seguono questi principi fondamentali:
+1. **On-Device Execution:** Sfruttano i modelli locali Gemma 4 (es. versioni E2B/E4B ottimizzate per mobile tramite LiteRT).
+2. **Privacy by Design:** Nessun dato, immagine o testo analizzato lascia mai lo smartphone o viene inviato a server cloud esterni.
+3. **Conversational UX:** Progettate per essere invocate on-demand tramite interfacce chat o menu di condivisione nativi del sistema operativo.
 
-Puoi importare questa Skill direttamente nell'applicazione Google AI Edge Gallery o nel tuo ambiente di sviluppo locale utilizzando l'URL Raw di GitHub.
-
-### 1. Recupera l'URL Raw
-1. Naviga all'interno di questa repository nella cartella `skills/alt-text-generator/`.
-2. Clicca sul file `SKILL.md`.
-3. In alto a destra, clicca sul pulsante **"Raw"**.
-4. Copia l'URL completo dalla barra degli indirizzi del browser.
-
-### 2. Importa la Skill nell'App
-1. Apri la dashboard del tuo progetto in **Google AI Edge**.
-2. Vai nella sezione **Agent Skills** (o *Custom Skills*).
-3. Clicca su **Add / Import Skill** e seleziona **Import from URL**.
-4. Incolla l'URL Raw precedentemente copiato e salva.
-
----
-
-## 📖 Come utilizzarlo
-
-Per evitare passaggi intermedi, puoi impostare questa Skill come **Default System Instruction** nelle impostazioni del modello Gemma 4.
-
-Se invece preferisci usarla on-demand tramite il router delle competenze, ti basta:
-1. Caricare l'immagine nella chat tramite l'interfaccia di sistema.
-2. Digitare una delle seguenti frasi di attivazione (Trigger Phrases):
-   * `alt text`
-   * `genera alt text per questa immagine`
-   * `descrizione accessibile`
-
----
-
-## 📄 Struttura del Progetto
+## 📂 Struttura del Repository
 
 ```text
-gemma-alt-text-skill/
-├── README.md                 # Questo file di documentazione
+.
 └── skills/
-    └── alt-text-generator/
-        └── SKILL.md          # Il file core con le istruzioni per Gemma 4
+    ├── alt-text-generator/
+    │   └── SKILL.md          # Configurazione prompt per l'Alt-Text
+    └── privacy-advisor/
+        └── SKILL.md          # Configurazione prompt per l'analisi privacy
